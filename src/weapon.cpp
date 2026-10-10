@@ -155,7 +155,7 @@ float Weapon::CheckSwordCollision(Rectangle rect) const {
     const Vector2 swordEndPosition = {(float)(m_rect.x + m_origin.y * sin(rotationRadians)),
                                       (float)(m_rect.y - m_origin.y * cos(rotationRadians))};
 
-    Vector2 *temp = new Vector2;
+    Vector2* temp = new Vector2;
 
     // Check line collision with the sides of the rectangle of monster
     if (CheckCollisionLines(swordStartPosition, swordEndPosition, {rect.x, rect.y},
